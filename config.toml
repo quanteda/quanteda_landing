@@ -1,5 +1,5 @@
-baseurl = "https://example.org"
-title = "Universal"
+baseurl = "./"
+title = "quanteda"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
