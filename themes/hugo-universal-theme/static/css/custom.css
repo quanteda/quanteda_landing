@@ -9,11 +9,13 @@
   min-height: 230px;
 }
 
-#navbar .navbar-header {
+#navbar .hidden-xs,
+#navbar .hidden-ms{
     min-height: 120px;
 }
 
-#navbar .navbar-header img {
+#navbar .hidden-xs img,
+#navbar .hidden-ms img{
     margin-top: 15px;
     margin-bottom: 15px;
 }
