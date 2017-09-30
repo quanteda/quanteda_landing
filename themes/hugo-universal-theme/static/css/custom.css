@@ -8,3 +8,15 @@
 .box-simple {
   min-height: 230px;
 }
+
+#navbar .navbar-header {
+  margin-top: 15px;
+    
+}
+
+#navbar {
+  position: relative;
+  min-height: 120px;
+  margin-bottom: 0;
+  border-bottom: 1px solid transparent;
+}
