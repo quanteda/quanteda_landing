@@ -10,13 +10,21 @@
 }
 
 #navbar .navbar-header {
-  margin-top: 15px;
-    
+    min-height: 120px;
 }
 
-#navbar {
-  position: relative;
-  min-height: 120px;
-  margin-bottom: 0;
-  border-bottom: 1px solid transparent;
+#navbar .navbar-header img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#navbar .visible-xs,
+#navbar .visible-ms{
+    min-height: 60px;
+}
+
+#navbar .visible-xs img,
+#navbar .visible-ms img{
+    margin-top: 3px;
+    margin-bottom: 3px;
 }

@@ -1,11 +1,16 @@
 <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
 
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
-
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header hidden-xs hidden-sm">
                 <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <img src="{{ .Site.BaseURL }}img/logo.svg" alt="{{ .Title }} logo">
+                    <img src="{{ .Site.BaseURL }}img/logo.svg" alt="{{ .Title }} logo" >
+                    <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+                </a>
+            </div>
+            <div class="navbar-header visible-xs visible-sm">
+                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+                    <img src="{{ .Site.BaseURL }}img/logo-small.svg" alt="{{ .Title }} logo" >
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
                 <div class="navbar-buttons">
