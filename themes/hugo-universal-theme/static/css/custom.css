@@ -39,3 +39,9 @@
     color: white;
 }
 
+.fa {
+    position: relative;
+    top: 4px;
+    font-size: 35px;
+}
+
