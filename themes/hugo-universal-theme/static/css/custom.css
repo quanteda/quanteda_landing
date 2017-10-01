@@ -30,3 +30,8 @@
     margin-top: 3px;
     margin-bottom: 3px;
 }
+
+.home-carousel {
+  background: url('../img/textgrid.svg') center center repeat;
+}
+
