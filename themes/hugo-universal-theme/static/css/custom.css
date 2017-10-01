@@ -22,12 +22,12 @@
 
 #navbar .visible-xs,
 #navbar .visible-ms{
-    min-height: 64px;
+    min-height: 76px;
 }
 
 #navbar .visible-xs img,
 #navbar .visible-ms img{
-    margin-top: 3px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
