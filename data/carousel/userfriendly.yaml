@@ -1,9 +1,9 @@
 weight: 3
-title: "Design"
+title: "User-friendly"
 description: >
   <ul class="list-style-none">
-    <li>Highly flexible</li>
     <li>Intuitive commands</li>
-    <li>Compatible with other R packages</li>
+    <li>Many options</li>
+    <li>Compatible with other packages</li>
   </ul>
 image: "img/carousel/template-easy-customize.png"
