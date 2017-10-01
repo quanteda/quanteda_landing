@@ -35,3 +35,7 @@
   background: url('../img/background.svg') repeat;
 }
 
+.home-carousel .owl-item a{
+    color: white;
+}
+
