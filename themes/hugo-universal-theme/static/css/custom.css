@@ -22,13 +22,13 @@
 
 #navbar .visible-xs,
 #navbar .visible-ms{
-    min-height: 60px;
+    min-height: 64px;
 }
 
 #navbar .visible-xs img,
 #navbar .visible-ms img{
     margin-top: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
 
 .home-carousel {
