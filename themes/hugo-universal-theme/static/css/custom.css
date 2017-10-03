@@ -45,3 +45,10 @@
     font-size: 35px;
 }
 
+#heading-breadcrumbs {
+  background: url('../img/texture-bw.png') repeat;
+}
+.bar.background-pentagon {
+  background: url('../img/hexagon.svg') repeat;
+}
+
