@@ -3,16 +3,17 @@ title = "About quanteda"
 id = "about"
 +++
 
-About the package
------------------
+## Developpers
 
 An R package for managing and analyzing text, created by [Kenneth Benoit](http://kenbenoit.net) in collaboration with a team of core [contributors](https://github.com/kbenoit/quanteda/graphs/contributors): [Kohei Watanabe](https://github.com/koheiw), [Paul Nulty](https://github.com/pnulty), [Adam Obeng](https://github.com/adamobeng), [Haiyan Wang](https://github.com/HaiyanLW), [Ben Lauderdale](https://github.com/lauderdale), and [Will Lowe](https://github.com/conjugateprior).
+
+## Supporters
+
 Supported by the European Research Council grant ERC-2011-StG 283794-QUANTESS.
 
-For more details, see the [**package website**](http://quanteda.io).
+## Citation
 
 How to cite the package:
-
 
     To cite package 'quanteda' in publications please use the
     following:
@@ -29,8 +30,7 @@ How to cite the package:
         url = {http://quanteda.io},
       }
       
-Contributing
-------------
+### Contributing
 
 Contributions in the form of feedback, comments, code, and bug reports are most welcome. How to contribute:
 
