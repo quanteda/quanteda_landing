@@ -1,4 +1,4 @@
-baseurl = "http://quanteda.netlify.com/"
+baseurl = "https://quanteda.netlify.com/"
 title = "quanteda"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
