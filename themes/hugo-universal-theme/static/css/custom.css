@@ -51,15 +51,15 @@ body {
 
 /* features */
 
-#all .bar {
+.bar {
     padding: 10px 0;
 }
 
-#all .box-simple {
+.box-simple {
   min-height: 200px;
 }
 
-#all .box-simple .fa {
+.box-simple .fa {
     position: relative;
     top: 4px;
     font-size: 35px;
@@ -71,18 +71,17 @@ body {
   background: url('../img/hexagon.svg') repeat;
 }
 
-/* blog */
+/* news and about */
 
-#blog-post h2 {
+h2 {
     color: #555555;
     text-transform: uppercase;
     font-size: 26px;
     letter-spacing: 0.08em;
 }
 
-#blog-post h3 {
+h3 {
     color: #555555;
-    text-transform: uppercase;
     font-size: 22px;
 }
 
