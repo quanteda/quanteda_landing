@@ -51,6 +51,6 @@ pie(
 ```
 
 <div class="figure">
-<img src="/./blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<img src="/news/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption">Figure 1 A fancy pie chart.</p>
 </div>

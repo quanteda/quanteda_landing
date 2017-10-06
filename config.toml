@@ -1,4 +1,4 @@
-baseurl = "./"
+baseurl = "http://quanteda.netlify.com/"
 title = "quanteda"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -29,7 +29,7 @@ paginate = 10
 
 [[menu.main]]
     name = "News"
-    url  = "/blog/"
+    url  = "/news/"
     weight = 3
 
 #[[menu.main]]

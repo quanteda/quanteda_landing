@@ -1,13 +1,21 @@
 /* your styles go here */
 
+body {
+    font-size: 16px;
+}
+
+#heading-breadcrumbs {
+  background: url('../img/texture-bw.png') repeat;
+}
+
+/*
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
 }
+*/
 
-.box-simple {
-  min-height: 230px;
-}
+/* logo */
 
 #navbar .hidden-xs,
 #navbar .hidden-ms{
@@ -16,8 +24,8 @@
 
 #navbar .hidden-xs img,
 #navbar .hidden-ms img{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #navbar .visible-xs,
@@ -31,29 +39,35 @@
     margin-bottom: 0px;
 }
 
-.home-carousel {
+/* carousel */
+
+#all .home-carousel {
   background: url('../img/network.svg') repeat;
 }
 
-.home-carousel .owl-item a{
+#all .home-carousel .owl-item a{
     color: white;
 }
 
+/* features */
 
-.box-simple .fa {
+#all .bar {
+    padding: 10px 0;
+}
+
+#all .box-simple {
+  min-height: 220px;
+}
+
+#all .box-simple .fa {
     position: relative;
     top: 4px;
     font-size: 35px;
 }
 
-#heading-breadcrumbs {
-  background: url('../img/texture-bw.png') repeat;
-}
+/* testimonials */
+
 .bar.background-pentagon {
   background: url('../img/hexagon.svg') repeat;
-}
-
-body {
-    font-size: 16px;
 }
 
