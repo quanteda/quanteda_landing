@@ -71,32 +71,34 @@ body {
 
 /* testimonials */
 
-.bar.background-pentagon {
+.bar .background-pentagon {
   background: url('../img/hexagon.svg') repeat;
+}
+
+.testimonial .name-picture {
+  width: 100% !important;
+}
+
+.testimonial .name-title {
+  padding-right: 70px;
+}
+
+.testimonial .name-title h5 {
+  margin: 0;
 }
 
 /* news and about */
 
 h2 {
-    color: #555555;
-    text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: 0.08em;
+  color: #555555;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 0.08em;
 }
 
 h3 {
-    color: #555555;
-    font-size: 22px;
+  color: #555555;
+  font-size: 22px;
 }
 
-/*
-#blog-listing-medium .post .author-category,
-#blog-listing-medium .post .date-comments{
-    font-size: 16px;
-}
-*/
-
-.no-padding {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
+/* users */
