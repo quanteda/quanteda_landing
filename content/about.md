@@ -1,5 +1,5 @@
 +++
-title = "About quanteda"
+title = "About"
 id = "about"
 +++
 
