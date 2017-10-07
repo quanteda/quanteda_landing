@@ -46,7 +46,7 @@ body {
 }
 
 #all .home-carousel .owl-item a{
-    color: white;
+  color: white;
 }
 
 /* features */
@@ -60,9 +60,13 @@ body {
 }
 
 .box-simple .fa {
-    position: relative;
-    top: 4px;
-    font-size: 35px;
+  position: relative;
+  top: 4px;
+  font-size: 35px;
+}
+
+.box-simple a:hover{
+  text-decoration: none;
 }
 
 /* testimonials */
