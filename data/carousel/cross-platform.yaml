@@ -3,7 +3,7 @@ title: "Cross-platform"
 description: >
     <ul class="list-style-none">
         <li>Support Windows, MacOS and Linux</li>
-        <li><a href="#">Works best with R Studio</a></li>
-        <li><a href="#">Compatible with R packages</a></li>
+        <li>Works best with R Studio</li>
+        <li>Compatible with R packages</li>
     </ul>
 image: "img/carousel/cross-platform.png"

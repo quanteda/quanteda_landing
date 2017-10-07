@@ -3,7 +3,7 @@ title: "Text analysis tool in R"
 description: >
     <ul class="list-style-none">
         <li>Intuitive commands</li>
-        <li><a href="#">Multi-lingual support</a></li>
-        <li><a href="#">Open source</a></li>
+        <li>Multi-lingual support</li>
+        <li>Open source</li>
     </ul>
 image: "img/carousel/wordcloud.png"
