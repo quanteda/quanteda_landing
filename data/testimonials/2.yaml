@@ -1,4 +1,6 @@
-text: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections."
-name: "John McIntyre"
-position: "CEO, TransTech"
-avatar: "img/testimonials/person-2.jpg"
+text: >
+  **Quanteda** is an excellent resource for both research and teaching than complements R in a way that is invaluable to me — only switching to Python would offer comparable benefits. 
+  It is far superior to related packages (e.g. tm) and so well documented that I use it centrally when teaching text mining.
+name: "Cornelius Puschmann"
+position: "Alexander von Humboldt Institute"
+avatar: "img/testimonials/cornelius.jpg"

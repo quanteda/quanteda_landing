@@ -1,4 +1,7 @@
-text: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections."
-name: "John McIntyre"
-position: "CEO, TransTech"
-avatar: "img/testimonials/person-3.png"
+text: >
+  **Quanteda** has been a greatly valuable tool for my research. 
+  Text analysis is a rapidly expanding field with new applications appearing rapidly in the social sciences. 
+  This package simplifies many of the tasks and allows me to implement more sophisticated classifiers for a more detailed analysis.
+name: "Jofre Rocabert"
+position: "ETH Zurich"
+avatar: "img/testimonials/jofre.jpg"
