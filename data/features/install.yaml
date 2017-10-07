@@ -3,4 +3,4 @@ name: "Install"
 icon: "fa fa-download"
 link: https://quanteda-tutorials.netlify.com/en/install/
 description: >
-    You can easily install **quanteda** on R.
+    You can easily install **quanteda** on R
