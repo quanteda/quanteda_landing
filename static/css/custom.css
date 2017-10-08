@@ -71,7 +71,7 @@ body {
 
 /* testimonials */
 
-.bar .background-pentagon {
+#all .background-pentagon {
   background: url('../img/hexagon.svg') repeat;
 }
 
