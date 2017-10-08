@@ -71,19 +71,19 @@ body {
 
 /* testimonials */
 
-#all .background-pentagon {
+.bar.background-pentagon {
   background: url('../img/hexagon.svg') repeat;
 }
 
-.testimonial .name-picture {
+.testimonials .item .testimonial .name-picture {
   width: 100% !important;
 }
 
-.testimonial .name-title {
+.testimonials .item .testimonial .name-title {
   padding-right: 70px;
 }
 
-.testimonial .name-title h5 {
+.testimonials .item .testimonial .name-title h5 {
   margin: 0;
 }
 
