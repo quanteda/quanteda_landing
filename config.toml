@@ -110,7 +110,7 @@ paginate = 10
 [params.testimonials]
     enable = true
     title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    subtitle = "Here are some of the <a href = "https://github.com/kbenoit/quanteda/issues/461">testimonials</a> left by our users, in their own words."
 
 [params.see_more]
     enable = false
