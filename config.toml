@@ -73,8 +73,8 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    about_us = "<p>We are quanteda team!</p>"
-    copyright = "Copyright (c) 2015 - 2017, quanteda team; all rights reserved."
+    about_us = "<p>We are the quanteda team!</p>"
+    copyright = "Copyright (c) 2017, quanteda team; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
