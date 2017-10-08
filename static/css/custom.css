@@ -76,7 +76,7 @@ body {
 }
 
 .testimonials .item .testimonial .name-picture {
-  width: 100% !important;
+  width: 100%;
 }
 
 .testimonials .item .testimonial .name-title {
@@ -84,7 +84,7 @@ body {
 }
 
 .testimonials .item .testimonial .name-title h5 {
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 /* news and about */
