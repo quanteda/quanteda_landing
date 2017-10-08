@@ -86,7 +86,7 @@ paginate = 10
 [params.topbar]
     enable = false
     text = """
-      <p class="hidden-sm hidden-xs">Quantetative analysis of textual data in R</p>
+      <p class="hidden-sm hidden-xs">Quantitative analysis of textual data in R</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -110,8 +110,8 @@ paginate = 10
 [params.testimonials]
     enable = true
     title = "Testimonials"
-    subtitle = "Here are some of the <a href = "https://github.com/kbenoit/quanteda/issues/461">testimonials</a> left by our users, in their own words."
-
+    subtitle = "Here are some of the [testimonials](https://github.com/kbenoit/quanteda/issues/461) left by our users, in their own words."
+    
 [params.see_more]
     enable = false
     icon = "fa fa-file-code-o"
