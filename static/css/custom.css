@@ -75,20 +75,20 @@ body {
 
 /* testimonials */
 
-.bar .background-pentagon {
+.bar.background-pentagon {
   background: url('../img/hexagon.svg') repeat;
 }
 
-.testimonial .name-picture {
-  width: 100% !important;
+.testimonials .item .testimonial .name-picture {
+  width: 100%;
 }
 
-.testimonial .name-title {
+.testimonials .item .testimonial .name-title {
   padding-right: 70px;
 }
 
-.testimonial .name-title h5 {
-  margin: 0;
+.testimonials .item .testimonial .name-title h5 {
+  margin: 0 0 5px 0;
 }
 
 /* news and about */

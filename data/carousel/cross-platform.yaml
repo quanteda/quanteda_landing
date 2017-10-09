@@ -2,8 +2,8 @@ weight: 2
 title: "Cross-platform"
 description: >
     <ul class="list-style-none">
-        <li>Support Windows, MacOS and Linux</li>
+        <li>Runs on Windows, macOS and Linux</li>
         <li>Works best with R Studio</li>
-        <li>Compatible with R packages</li>
+        <li>Behaves nicely with other R packages</li>
     </ul>
 image: "img/carousel/cross-platform.png"
