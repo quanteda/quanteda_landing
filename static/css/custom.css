@@ -65,6 +65,10 @@ body {
   font-size: 35px;
 }
 
+.box-simple a{
+  cursor: hand;
+}
+
 .box-simple a:hover{
   text-decoration: none;
 }
