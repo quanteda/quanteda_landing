@@ -2,8 +2,8 @@ weight: 3
 title: "Highly efficient"
 description: >
     <ul class="list-style-none">
-        <li><a href="#">Impletmented in C++</a></li>
-        <li><a href="#">Muti-core CPU support</a></li>
-        <li><a href="#">Memory efficient data stracture</a></li>
+        <li>Implemented in C++</li>
+        <li>Muti-core, parallel processing</li>
+        <li>Memory efficient data structure</li>
     </ul>
 image: "img/carousel/benchmark.png"

@@ -1,5 +1,5 @@
 +++
-title = "About quanteda"
+title = "About"
 id = "about"
 +++
 
@@ -18,7 +18,7 @@ How to cite the package:
     To cite package 'quanteda' in publications please use the
     following:
 
-      Benoit, Kenneth et. al. ().  "quanteda: Quantitative Analysis of
+      Benoit, Kenneth et. al. (2017).  "quanteda: Quantitative Analysis of
       Textual Data".  R package version: 0.99.12.  http://quanteda.io.
 
     A BibTeX entry for LaTeX users is

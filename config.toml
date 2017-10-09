@@ -1,5 +1,5 @@
 baseurl = "https://quanteda.netlify.com/"
-title = "quanteda"
+title = "quanteda: R package for quantitative analysis of textual data"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -73,8 +73,8 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    about_us = "<p>We are quanteda team!</p>"
-    copyright = "Copyright (c) 2015 - 2017, quanteda team; all rights reserved."
+    about_us = "<p>We are the quanteda team!</p>"
+    copyright = "Copyright (c) 2017, quanteda team; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -86,7 +86,7 @@ paginate = 10
 [params.topbar]
     enable = false
     text = """
-      <p class="hidden-sm hidden-xs">Quantetative analysis of textual data in R</p>
+      <p class="hidden-sm hidden-xs">Quantitative analysis of textual data in R</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -106,18 +106,12 @@ paginate = 10
 
 [params.features]
     enable = true
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more informtion take a look at the README.
 
 [params.testimonials]
     enable = true
-    # All testimonials are defined in their own files. You can find example items
-    # at 'exampleSite/data/testimonials'.
-    # For more informtion take a look at the README.
     title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
-
+    subtitle = "Here are some of the [testimonials](https://github.com/kbenoit/quanteda/issues/461) left by our users, in their own words."
+    
 [params.see_more]
     enable = false
     icon = "fa fa-file-code-o"
@@ -128,9 +122,6 @@ paginate = 10
 
 [params.clients]
     enable = true
-    # All clients are defined in their own files. You can find example items
-    # at 'exampleSite/data/clients'.
-    # For more informtion take a look at the README.
     title = "Our users"
     subtitle = ""
 
