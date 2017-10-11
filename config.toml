@@ -43,7 +43,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = "https://github.com/kbenoit/quanteda"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -61,7 +61,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:your@email.com"
+    url = "mailto:kbenoit@lse.ac.uk"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
@@ -84,10 +84,10 @@ paginate = 10
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = false
+    enable = true
     text = """
-      <p class="hidden-sm hidden-xs">Quantitative analysis of textual data in R</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <p class="hidden-md hidden-lg">
+      <a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
