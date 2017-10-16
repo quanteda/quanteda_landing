@@ -3,6 +3,17 @@ title = "About"
 id = "about"
 +++
 
+## Objectives
+
+**quanteda** is developped to achive following core objectives in quantitative text analysis. 
+
+1. Simplicity
+2. Best practice
+    * workflow
+    * transparency and reproducability
+3. High performance
+4. Inter-operability with other tools
+
 ## Developpers
 
 An R package for managing and analyzing text, created by [Kenneth Benoit](http://kenbenoit.net) in collaboration with a team of core [contributors](https://github.com/kbenoit/quanteda/graphs/contributors): [Kohei Watanabe](https://github.com/koheiw), [Paul Nulty](https://github.com/pnulty), [Adam Obeng](https://github.com/adamobeng), [Haiyan Wang](https://github.com/HaiyanLW), [Ben Lauderdale](https://github.com/lauderdale), and [Will Lowe](https://github.com/conjugateprior).
