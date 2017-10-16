@@ -7,4 +7,4 @@ categories = ["event"]
 
 ## Workshop at ESSSC
 
-We will convene a half-day workshop at [European Symposium Series on Societal Challenges in Computational Social Science](http://symposium.computationalsocialscience.eu/) on quantitative text analysis using **quanteda**. aaaaaa.
+We will convene a half-day workshop at [European Symposium Series on Societal Challenges in Computational Social Science](http://symposium.computationalsocialscience.eu/) on quantitative text analysis using **quanteda**.
