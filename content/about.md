@@ -13,8 +13,8 @@ id = "about"
 2. Best practice
     * Facilitate transparent and reproducible workflows
 3. High efficiency
-    * Process large dataset very fast by parallel computing in C++
-    * Store large textual data in a small memory space by serialization  
+    * Exploit multi-core CPU's to process large datasets
+    * Store large datasets in small RAMs of laptop computers  
 4. Inter-operability 
     * Allow **quanteda** to be used in conjunction with other R packages
 
