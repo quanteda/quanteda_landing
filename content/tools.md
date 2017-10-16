@@ -7,7 +7,7 @@ id = "about"
 
 ### spacyr
 
-[**spacyr**](https://github.com/kbenoit/spacyr) is part-of-speeach tagger based on Python library spaCy.
+[**spacyr**](https://github.com/kbenoit/spacyr) is a part-of-speeach tagger based on Python library spaCy.
 
 ### readtext
 
