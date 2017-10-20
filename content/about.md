@@ -32,7 +32,10 @@ Contributions in the form of feedback, comments, code, and bug reports are most 
 
 ## Supporters
 
+
 **quanteda** project is supported by the European Research Council grant ERC-2011-StG 283794-QUANTESS.
+
+![European Research Council](../img/erc.svg)
 
 ## Citation
 
