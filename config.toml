@@ -1,4 +1,4 @@
-baseurl = "https://quanteda.netlify.com/"
+baseurl = "https://quanteda.io/"
 title = "quanteda: R package for quantitative analysis of textual data"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
