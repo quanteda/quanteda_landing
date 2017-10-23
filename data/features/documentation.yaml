@@ -1,6 +1,6 @@
 weight: 3
 name: "Documentation"
 icon: "fa fa-book"
-link: http://quanteda.io/reference/
+link: http://docs.quanteda.io/reference/
 description: >
     API's are documented in detail in plain language

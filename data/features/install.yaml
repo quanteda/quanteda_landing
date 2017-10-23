@@ -1,7 +1,7 @@
 weight: 1
 name: "Install"
 icon: "fa fa-download"
-link: https://quanteda-tutorials.netlify.com/install/
+link: http://docs.quanteda.io
 draft: "true"
 description: >
     You can easily install **quanteda** on R
