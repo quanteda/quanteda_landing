@@ -7,17 +7,17 @@ id = "basic"
 
 - [Quick Start Guide](http://docs.quanteda.io/articles/pkgdown/quickstart.html): a basic overview of **quanteda**’s features and capabilities most important functions
 
-## Cheat Sheet and Featrue Comparison tables
+## Cheat Sheet and Feature Comparison Tables
 
 If you are using other R packages, the folloing these make your transition to **quanteda** smooth.
 
-- [Comparison to other text analysis packages](http://docs.quanteda.io/articles/pkgdown/comparison.html): a table to shwo correspondence between **quantada**'s and other packages' functions.
+- [Comparison to other text analysis packages](http://docs.quanteda.io/articles/pkgdown/comparison.html): a table to show correspondence between **quantada**'s and other packages' functions
 - [Quanteda Cheat Sheet (PDF)](https://github.com/rstudio/cheatsheets/raw/master/quanteda.pdf):  a cheat sheet with the most important functions available on the RStudio website
 
-## Examples and replications
+## Examples and Replications
 
 - [Example: Latent Semantic Analysis (LSA)](http://docs.quanteda.io/articles/pkgdown/examples/lsa.html): perform Latent Semantic Analysis using the **quanteda** package
-- [Example: Textual Data Visualization](http://docs.quanteda.io/articles/pkgdown/examples/plotting.html): plot word frequencies, wordclouds and results of text scaling models etc.
+- [Example: Textual Data Visualization](http://docs.quanteda.io/articles/pkgdown/examples/plotting.html): plot word frequencies, wordclouds and results of text scaling models
 - [Replication: Word Embedding (word2vec)](http://docs.quanteda.io/articles/pkgdown/replication/text2vec.html): replicate GloVe (word embedding) examples using **quanteda**
 - [Replication: Text Analysis with R for Students of Literature](http://docs.quanteda.io/articles/pkgdown/replication/digital-humanities.html): replicate the analysis from Matthew Jockers' book with **quanteda** functions
 
