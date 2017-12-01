@@ -1,6 +1,6 @@
 +++
 title = "Other tools"
-id = "about"
+id = "basic"
 +++
 
 ## Tools for text analysis

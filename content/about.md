@@ -1,6 +1,6 @@
 +++
 title = "About"
-id = "about"
+id = "basic"
 +++
 
 ## Objectives

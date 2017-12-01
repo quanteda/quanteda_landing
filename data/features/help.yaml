@@ -1,7 +1,7 @@
 weight: 3
 name: "Help"
 icon: "fa fa-question"
-link: http://http://quanteda.io/help
+link: /help/
 draft: "true"
 description: >
     Vignettes and tutorials

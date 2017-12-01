@@ -1,6 +1,6 @@
 +++
 title = "Help"
-id = "help"
+id = "basic"
 +++
 
 ## Help and Support
