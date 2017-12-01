@@ -3,19 +3,23 @@ title = "Help"
 id = "basic"
 +++
 
-## Help and Support
+## Quick Start
 
-**quanteda** provides several tutorials and vignettes to get you started.
+- [Quick Start Guide](http://docs.quanteda.io/articles/pkgdown/quickstart.html): a basic overview of **quanteda**’s features and capabilities most important functions
 
-- [Read Texts into R](https://github.com/kbenoit/readtext/blob/master/vignettes/readtext_vignette.Rmd): use the **readtext** package to load text files
-- [Quick Start Guide](http://docs.quanteda.io/articles/quickstart.html): a basic overview of quanteda’s features and capabilities
-- [Comparison to other packages](http://docs.quanteda.io/articles/comparison.html):   quanteda vs. alternative R packages for quantitative text analysis 
-- [quanteda Cheat Sheet (PDF)](https://github.com/rstudio/cheatsheets/raw/master/quanteda.pdf): a cheat sheet with the most important functions, hosted on the RStudio website
-- [Example: Latent Semantic Analysis (LSA)](http://docs.quanteda.io/articles/examples/lsa.html): perform Latent Semantic Analysis using the quanteda package
-- [Example: Word Embedding (word2vec)](http://docs.quanteda.io/articles/examples/text2vec.html): conduct word vector representations
-- [Example: Textual Data Visualization](http://docs.quanteda.io/articles/examples/plotting.html): plot word frequencies, wordclouds and results of text scaling models
-- [Replication: Text Analysis with R for Students of Literature](http://docs.quanteda.io/articles/replication/digital-humanities.html): replicate the analysis from Matthew Jockers' book with quanteda functions
+## Cheat Sheet and Featrue Comparison tables
 
+If you are using other R packages, the folloing these make your transition to **quanteda** smooth.
+
+- [Comparison to other text analysis packages](http://docs.quanteda.io/articles/pkgdown/comparison.html): a table to shwo correspondence between **quantada**'s and other packages' functions.
+- [Quanteda Cheat Sheet (PDF)](https://github.com/rstudio/cheatsheets/raw/master/quanteda.pdf):  a cheat sheet with the most important functions available on the RStudio website
+
+## Examples and replications
+
+- [Example: Latent Semantic Analysis (LSA)](http://docs.quanteda.io/articles/pkgdown/examples/lsa.html): perform Latent Semantic Analysis using the **quanteda** package
+- [Example: Textual Data Visualization](http://docs.quanteda.io/articles/pkgdown/examples/plotting.html): plot word frequencies, wordclouds and results of text scaling models etc.
+- [Replication: Word Embedding (word2vec)](http://docs.quanteda.io/articles/pkgdown/replication/text2vec.html): replicate GloVe (word embedding) examples using **quanteda**
+- [Replication: Text Analysis with R for Students of Literature](http://docs.quanteda.io/articles/pkgdown/replication/digital-humanities.html): replicate the analysis from Matthew Jockers' book with **quanteda** functions
 
 ## Workshop Materials
 
