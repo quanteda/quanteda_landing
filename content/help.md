@@ -9,7 +9,7 @@ id = "basic"
 
 ## Cheat Sheet and Feature Comparison Tables
 
-If you are using other R packages, the folloing these make your transition to **quanteda** smooth.
+If you are using other R packages, the following these make your transition to **quanteda** smooth.
 
 - [Comparison to other text analysis packages](http://docs.quanteda.io/articles/pkgdown/comparison.html): a table to show correspondence between **quantada**'s and other packages' functions
 - [Quanteda Cheat Sheet (PDF)](https://github.com/rstudio/cheatsheets/raw/master/quanteda.pdf):  a cheat sheet with the most important functions available on the RStudio website
@@ -24,7 +24,9 @@ If you are using other R packages, the folloing these make your transition to **
 ## Workshop Materials
 
 - [Quantitative Text Analysis Using R](https://github.com/kbenoit/QTAUR-halfday): a short half-day course
-- [Introduction to Text Analysis Using R](https://github.com/kbenoit/ITAUR): a three-day tutorial
+- [Introduction to Japanese Text Analysis Using R](https://github.com/koheiw/IJTA): a short half-day course in Japanese
+- [Introduction to Text Analysis Using R](https://github.com/kbenoit/ITAUR): a two-day tutorial
+
 
 ## Bug Reports or Questions
 
