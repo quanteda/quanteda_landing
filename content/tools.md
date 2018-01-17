@@ -14,5 +14,5 @@ id = "basic"
 [**readtext**](https://github.com/quanteda/readtext) helps you to import textual data in different formats and generate document variable.
 
 ### LIWCalike
-[**LIWCalike**](https://github.com/quanteda/LIWCalike) turns **quanteda** into a dictionary-based text analysis tool like LIWC.
+[**LIWCalike**](https://github.com/kbenoit/LIWCalike) turns **quanteda** into a dictionary-based text analysis tool like LIWC.
 
