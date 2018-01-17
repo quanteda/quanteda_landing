@@ -73,8 +73,12 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    about_us = "<p>We are the quanteda team!</p>"
-    copyright = "Copyright (c) 2017, quanteda team; all rights reserved."
+    about_us = "We are the quanteda team: [Kenneth Benoit](http://kenbenoit.net),
+    [Kohei Watanabe](https://github.com/koheiw), [Paul Nulty](https://github.com/pnulty),
+    [Adam Obeng](https://github.com/adamobeng),
+    [Stefan Müller](http://github.com/stefan-mueller), [Haiyan Wang](https://github.com/HaiyanLW),
+    [Ben Lauderdale](https://github.com/lauderdale), and [Will Lowe](https://github.com/conjugateprior) (core contributors)."
+    copyright = "Copyright (c) 2018, quanteda team; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
