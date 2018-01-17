@@ -7,4 +7,4 @@ categories = ["event"]
 
 ## Quanteda v1.0 lanuch at London R
 
-We announced the release of **quanteda** v1.0 in a [presentation](/news/london-r-2018.pdf) at [London R meeting](http://www.londonr.org/) on 16 January 2018. We thank all the participants and organizers for the great opportunity.
+We announced the release of **quanteda** v1.0 in a [presentation](/news/london-r-2018.pdf) at the [London R meeting](http://www.londonr.org/) on 16 January 2018. We thank all the participants and organizers for the great opportunity.
