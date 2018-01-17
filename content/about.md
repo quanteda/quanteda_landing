@@ -39,4 +39,4 @@ Contributions in the form of feedback, comments, code, and bug reports are most 
 
 ## Citation
 
-**quanteda**'s citation information is available on the [Github page](https://github.com/quanteda/quanteda).
+**quanteda**'s citation information is available on the [documentation page](http://docs.quanteda.io/authors.html).
