@@ -73,7 +73,7 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    about_us = "Quanteda is developed by [a team of developers](/about/) under Quanteda Initiative."
+    about_us = "**quanteda** is developed by [a team of developers](/about/) under Quanteda Initiative."
     copyright = "Copyright (c) 2018, quanteda team; all rights reserved."
 
     # Format dates with Go's time formatting
