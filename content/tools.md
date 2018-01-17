@@ -7,12 +7,12 @@ id = "basic"
 
 ### spacyr
 
-[**spacyr**](https://github.com/kbenoit/spacyr) is a part-of-speeach tagger based on Python library spaCy.
+[**spacyr**](https://github.com/quanteda/spacyr) is a part-of-speeach tagger based on Python library spaCy.
 
 ### readtext
 
-[**readtext**](https://github.com/kbenoit/readtext) helps you to import textual data in different formats and generate document variable.
+[**readtext**](https://github.com/quanteda/readtext) helps you to import textual data in different formats and generate document variable.
 
 ### LIWCalike
-[**LIWCalike**](https://github.com/kbenoit/LIWCalike) turns **quanteda** into a dictionary-based text analysis tool like LIWC.
+[**LIWCalike**](https://github.com/quanteda/LIWCalike) turns **quanteda** into a dictionary-based text analysis tool like LIWC.
 
