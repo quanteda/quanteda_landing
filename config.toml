@@ -43,7 +43,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/kbenoit/quanteda"
+    url = "https://github.com/quanteda/quanteda"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 #[[menu.topbar]]
@@ -73,11 +73,7 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    about_us = "We are the quanteda team: [Kenneth Benoit](http://kenbenoit.net),
-    [Kohei Watanabe](https://github.com/koheiw), [Paul Nulty](https://github.com/pnulty),
-    [Adam Obeng](https://github.com/adamobeng),
-    [Stefan Müller](http://github.com/stefan-mueller), [Haiyan Wang](https://github.com/HaiyanLW),
-    [Ben Lauderdale](https://github.com/lauderdale), and [Will Lowe](https://github.com/conjugateprior) (core contributors)."
+    about_us = "Quanteda is developed by [a team of developers](/about/) under Quanteda Initiative."
     copyright = "Copyright (c) 2018, quanteda team; all rights reserved."
 
     # Format dates with Go's time formatting
