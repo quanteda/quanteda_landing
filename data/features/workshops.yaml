@@ -1,0 +1,6 @@
+weight: 6
+name: "Workshops"
+icon: "fa fa-comment"
+link: /workshops/
+description: >
+    Host a **quanteda** workshop at your institution
