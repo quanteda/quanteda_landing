@@ -2,6 +2,5 @@ weight: 3
 name: "Help"
 icon: "fa fa-question"
 link: /help/
-draft: "true"
 description: >
-    Links to materials to learn how to use **quanteda**
+    Additional sources to learn how to use **quanteda**
