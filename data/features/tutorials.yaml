@@ -1,0 +1,6 @@
+weight: 2
+name: "Tutorials"
+icon: "fa fa-graduation-cap"
+link: http://tutorials.quanteda.io
+description: >
+    Learn how to use **quanteda** in step-by-step tutorials

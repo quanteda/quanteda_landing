@@ -2,6 +2,5 @@ weight: 1
 name: "Install"
 icon: "fa fa-download"
 link: http://docs.quanteda.io/articles/pkgdown/quickstart.html
-draft: "true"
 description: >
     You can easily install **quanteda** on R
