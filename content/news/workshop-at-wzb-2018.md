@@ -7,4 +7,4 @@ categories = ["event"]
 
 ## Workshop at WZB Berlin
 
-We will convene a **quanteda** workshop at the [WZB Berlin Social Science Center](http://symposium.computationalsocialscience.eu/) on January 31, 2018. For the event we have developed a [new tutorial website](http://tutorials.quanteda.io) that contains a step-by-step introduction to quantitative text analysis using **quanteda**.
+We will convene a **quanteda** workshop at the [WZB Berlin Social Science Center](https://www.wzb.eu/en) on January 31, 2018. For the event we have developed a [new tutorial website](http://tutorials.quanteda.io) that contains a step-by-step introduction to quantitative text analysis using **quanteda**.
