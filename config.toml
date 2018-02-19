@@ -60,6 +60,12 @@ paginate = 10
 
 [[menu.topbar]]
     weight = 4
+    name = "YouTube"
+    url = "https://www.youtube.com/channel/UC0xc75IqmteIlp-i2vjKWFg"
+    pre = "<i class='fa fa-2x fa-youtube'></i>"
+
+[[menu.topbar]]
+    weight = 5
     name = "Email"
     url = "mailto:kbenoit@lse.ac.uk"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
