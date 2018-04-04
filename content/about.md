@@ -49,3 +49,8 @@ Contributions in the form of feedback, comments, code, and bug reports are most 
 **quanteda** project is supported by the European Research Council grant ERC-2011-StG 283794-QUANTESS.
 
 ![European Research Council](../img/erc.svg)
+
+## Contact
+
+If you have questions on how to use **quanteda**, please first vist the [help page](../help/). For other queries, please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk).
+
