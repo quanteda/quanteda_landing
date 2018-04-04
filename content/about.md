@@ -3,9 +3,21 @@ title = "About"
 id = "basic"
 +++
 
-## Objectives
+## Organization
 
-**quanteda** is developed to achieve following core objectives in quantitative text analysis. 
+### Quantida Initiative
+
+**quanteda** and its accompaniying packages are developed by contributors through the Quanteda Initiative, a UK-based community interest company (11135166) founded by Kenneth Benoit, to promote quantitative text analysis in social sociences and humanities. Please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk) for any queries on the organization. 
+
+![Quantida Initiative](../img/qi.svg)
+
+## Projects
+
+### Quanteda
+
+#### Objectives
+
+We develop **quanteda** to achieve following core objectives in quantitative text analysis. 
 
 1. Simplicity and flexibility
     * Create flexible tools for different analytic purposes
@@ -18,25 +30,24 @@ id = "basic"
 4. Inter-operability 
     * Allow **quanteda** to be used in conjunction with other R packages
 
-## Developers
+#### Main contributors
 
-**quanteda** is created by [Kenneth Benoit](https://github.com/kbenoit) in collaboration with a team of core [contributors](https://github.com/quanteda/quanteda/graphs/contributors): [Kohei Watanabe](https://github.com/koheiw), [Paul Nulty](https://github.com/pnulty), [Adam Obeng](https://github.com/adamobeng), [Haiyan Wang](https://github.com/HaiyanLW), [Stefan Müller](https://github.com/stefan-mueller), [Ben Lauderdale](https://github.com/lauderdale), and [Will Lowe](https://github.com/conjugateprior).
+* [Kenneth Benoit](https://github.com/kbenoit)
+* [Kohei Watanabe](https://github.com/koheiw)
+* [Paul Nulty](https://github.com/pnulty) 
+* [Adam Obeng](https://github.com/adamobeng) 
+* [Haiyan Wang](https://github.com/HaiyanLW)
+* [Stefan Müller](https://github.com/stefan-mueller)
+* [Ben Lauderdale](https://github.com/lauderdale)
+* [Will Lowe](https://github.com/conjugateprior)
 
-### Contributing
+See a [Github Insights](https://github.com/quanteda/quanteda/graphs/contributors) for other contributors. If you wish to contrinute to our projects, please visit our [Github page](https://github.com/quanteda/quanteda/wiki).
 
-Contributions in the form of feedback, comments, code, and bug reports are most welcome. How to contribute:
-
--   Fork the source code, modify, and issue a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) through the [project GitHub page](https://github.com/quanteda/quanteda). See our [Contributor Code of Conduct](https://github.com/quanteda/quanteda/blob/master/CONDUCT.md) and the all-important **quanteda** [Style Guide](https://github.com/quanteda/quanteda/wiki/Style-guide).
--   File bug reports and wish lists in [**quanteda** issues](https://github.com/quanteda/quanteda/issues).
--   Submit a question on the [**quanteda** channel on  StackOverflow](http://stackoverflow.com/questions/tagged/quanteda).
-
-## Supporters
-
+#### Supporters
 
 **quanteda** project is supported by the European Research Council grant ERC-2011-StG 283794-QUANTESS.
 
 ![European Research Council](../img/erc.svg)
 
-## Citation
 
-**quanteda**'s citation information is available on the [documentation page](http://docs.quanteda.io/authors.html).
+

@@ -43,32 +43,26 @@ paginate = 10
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/quanteda/quanteda"
-    pre = "<i class='fa fa-2x fa-github'></i>"
+    url = "https://github.com/quanteda/"
+    pre = "<i class='fab fa-2x fa-github'></i>"
 
 #[[menu.topbar]]
 #    weight = 2
 #    name = "Facebook"
 #    url = "http://facebook.com"
-#    pre = "<i class='fa fa-2x fa-facebook'></i>"
+#    pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
     weight = 3
     name = "Twitter"
     url = "https://twitter.com/textasdata"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
+    pre = "<i class='fab fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
     weight = 4
     name = "YouTube"
     url = "https://www.youtube.com/channel/UC0xc75IqmteIlp-i2vjKWFg"
-    pre = "<i class='fa fa-2x fa-youtube'></i>"
-
-[[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:kbenoit@lse.ac.uk"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
+    pre = "<i class='fab fa-2x fa-youtube'></i>"
 
 [params]
     viewMorePostLink = "/news/"
@@ -80,7 +74,7 @@ paginate = 10
     style = "blue"
 
     about_us = "**quanteda** is developed by [a team of developers](/about/) through the Quanteda Initiative."
-    copyright = "Copyright (c) 2018 Quanteda Initiative; all rights reserved."
+    copyright = "Copyright (c) 2017-2018 Quanteda Initiative; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -91,7 +85,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = ""
+    text = "quanteda initiative"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]

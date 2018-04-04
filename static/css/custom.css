@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+#top {
+  padding: 8px 0;
+}
+
 
 #heading-breadcrumbs {
   background: url('../img/hexagon_small.png') repeat;
@@ -26,7 +30,7 @@ body {
 
 #navbar .hidden-xs,
 #navbar .hidden-ms{
-  min-height: 110px;
+  min-height: 100px;
 }
 
 #navbar .hidden-xs img,
@@ -116,6 +120,11 @@ h2 {
 h3 {
   color: #555555;
   font-size: 22px;
+}
+
+h4 {
+  color: #555555;
+  font-size: 18px;
 }
 
 /* users */
