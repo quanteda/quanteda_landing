@@ -1,6 +1,6 @@
 weight: 6
-name: "Quanteda-Based Publications"
+name: "Publications wtih quanteda"
 icon: "fa fa-file-alt"
-link: https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4124149528480169545,5426967797859565261,10275772072778885251,5689866426931637102
+link: https://scholar.google.co.uk/scholar?hl=en&as_sdt=0,5&sciodt=0,5&cites=4124149528480169545,5426967797859565261,10275772072778885251,5689866426931637102&scipsc=&q=&scisbd=1
 description: >
-    Find out about publications and working papers that utilize  **quanteda**
+    Find out about publications and working papers that utilize **quanteda**
