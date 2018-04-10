@@ -5,9 +5,9 @@ id = "basic"
 
 ## Organization
 
-### Quantida Initiative
+### Quanteda Initiative
 
-**quanteda** and its accompaniying packages are developed by contributors through the Quanteda Initiative, a UK-based community interest company (11135166) founded by Kenneth Benoit, to promote quantitative text analysis in social sociences and humanities. Please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk) for any queries on the organization. 
+**quanteda** and its accompanying packages are developed by contributors through the Quanteda Initiative, a UK-based community interest company (11135166) founded by Kenneth Benoit, to promote quantitative text analysis in social sciences and humanities. Please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk) for any queries on the organization. 
 
 ![Quantida Initiative](../img/qi.svg)
 
@@ -41,7 +41,7 @@ We develop **quanteda** to achieve following core objectives in quantitative tex
 * [Ben Lauderdale](https://github.com/lauderdale)
 * [Will Lowe](https://github.com/conjugateprior)
 
-See a [Github Insights](https://github.com/quanteda/quanteda/graphs/contributors) for other contributors. If you wish to contrinute to our projects, please visit our [Github page](https://github.com/quanteda/quanteda/wiki).
+See [Github Insights](https://github.com/quanteda/quanteda/graphs/contributors) for other contributors. If you wish to contrinute to our projects, please visit our [Github page](https://github.com/quanteda/quanteda/wiki).
 
 #### Supporters
 
