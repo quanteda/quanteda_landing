@@ -191,7 +191,3 @@ quanteda_options("threads" = number_threads - 1)
 If you would like to see additional performance tests, please contact the [maintainer](K.R.Benoit@lse.ac.uk). 
 
 
-```r
-# save execution times as rds file
-save(times_token, times_remove, times_dfm, file =  '../../data/data_news/r-packages_benchmark.Rdata')
-```
