@@ -1,0 +1,197 @@
+---
+title: "Comparing the performance of quanteda with other R packages"
+author: "Kohei Watanabe, Stefan Müller, and Kenneth Benoit"
+date: "2018-04-10"
+---
+
+
+
+One of the most frequent questions about the **quanteda** package concerns the performance and execution time compared with other packages for quantitative text analysis. In this short blog post, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) and [**tidytext**](tidytext package) packages. We focus on three major steps of text analysis that can be accomplished in all three packages: tokenizing text, removing certain features from a corpus/tokens object, and creating a document-feature matrix (also called document-term matrix). 
+
+We measure the execution time with the **microbenchmark** package repeated each step 20 times for each package and creating summary statistics.
+
+## 1. Create a corpus
+
+First, we create a corpus from 6000 articles published in the Guardian. The corpus consists of over 5.3 million tokens and is part of **quanteda.corpora**, a package with several text corpora.
+
+We repeat each process 20 times in the three packages and plot the distribution as well as the median execution time.
+ 
+
+```r
+# load required packages
+require(microbenchmark)
+require(quanteda)
+require(tm)
+require(tidytext)
+require(dplyr)
+library(ggplot2)
+require(stopwords)
+```
+
+
+```r
+# download the Guardian corpus and save the texts
+txt <- texts(quanteda.corpora::download('data_corpus_guardian'))
+
+# create a quanteda corpus
+corp_qu <- quanteda::corpus(txt)
+
+# create a tm corpus
+corp_tm <- tm::Corpus(VectorSource(txt))
+
+# create a data frame with one observation per text for tidytext
+corp_ti <- data_frame(txt = txt, document = seq_along(txt))
+```
+
+
+
+## 2. Tokenize texts
+
+Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus.
+
+
+```r
+# measure the execution time for tokenization 
+# (repeating the process 20 times)
+times_token <- microbenchmark(
+    quanteda = quanteda::tokens(corp_qu, what = "fastestword"),
+    tm = tm::Boost_tokenizer(corp_tm),
+    tidytext = tidytext::unnest_tokens(corp_ti, 'token', 'txt', to_lower = FALSE),
+    times = 20
+)
+
+toks_qu <- quanteda::tokens(corp_qu, what = "fastestword")
+toks_tm <- tm::scan_tokenizer(corp_tm)
+toks_ti <- tidytext::unnest_tokens(corp_ti, 'token', 'txt', to_lower = FALSE)
+```
+
+Next, we write a function to create boxplots with the execution times.
+
+
+```r
+plot_benchmark <- function(x, title) {
+  
+  df_times <- as.data.frame(x)
+  
+  df_times_median <- df_times %>% 
+    dplyr::group_by(expr) %>% 
+    dplyr::summarise(median_time = round(median(time / 1e9), 1))
+  
+  ggplot(df_times, aes(x = expr, y = time / 1e9)) + 
+    geom_boxplot(width = 0.2, notchwidth = FALSE) +
+    geom_point(alpha = 0.2) +
+    scale_y_continuous(limits = c(0, max(x$time / 1e9))) +
+    geom_text(data = df_times_median, 
+            aes(label = median_time, x = expr, 
+                y = median_time, hjust = 2), size = 5, colour = "grey50") +
+    labs(x = NULL, y = "Execution time (sec)", title = title) +
+    theme_bw(base_size = 14) + 
+    theme(axis.text = element_text(size = 14, colour = "black"))
+}
+```
+
+
+
+```r
+plot_benchmark(times_token, title = "Tokenization")
+```
+
+![plot of chunk plot_token](figures_performance/plot_token-1.png)
+
+**quanteda**'s and **tidytext**'s execution times are identical as both packages rely on the **stringi** package for tokenization. The disadvantage in computational performance of the **tm** becomes evident. Tokenization in **tm** takes around 25 times longer than in the other two packages.
+
+
+## 3. Token selection
+
+In a third step, we remove a selection of terms from the tokenized object. This is a common task as many projects involve removing so called stopwords or punctuation. We use the list of English stopwords from the **stopwords** package and measure the time it takes to remove these tokens in each package.
+
+
+```r
+# determine the list of stopwords
+stopword <- stopwords::stopwords('en')
+
+# print the first 20 stopwords
+head(stopword, 20)
+```
+
+```
+##  [1] "i"          "me"         "my"         "myself"     "we"        
+##  [6] "our"        "ours"       "ourselves"  "you"        "your"      
+## [11] "yours"      "yourself"   "yourselves" "he"         "him"       
+## [16] "his"        "himself"    "she"        "her"        "hers"
+```
+
+```r
+# stopwords need to be a data frame for tidytext
+stopword_ti <- data_frame(word = stopword)
+```
+
+
+```r
+# measure the execution time for tokenization 
+# (repeating the process 20 times)
+times_remove <- microbenchmark(
+    quanteda = quanteda::tokens_remove(toks_qu, stopword),
+    tm = tm::tm_map(corp_tm, removeWords, stopword),
+    tidytext = dplyr::anti_join(toks_ti, stopword_ti, by = c('token' = 'word')),
+    times = 20
+)
+```
+
+Again, **quanteda** and **tidytext** outperform **tm** and remove the tokens five times faster.
+
+
+```r
+plot_benchmark(times_remove, title = "Token selection")
+```
+
+![plot of chunk plot_remove](figures_performance/plot_remove-1.png)
+
+## 4. Construct a document-feature matrix
+
+Finally, we divide up the tokens objects into a document-feature matrix. In **quanteda** and **tm** each document is a row and each unique feature a column.  **tidytext** follows a one-token-per row principle resulting in one column which contains all tokens and one variable that indicates the document. Thus, users of the base **tidytext** functions might not require a transformation to a document-features matrix.
+
+
+```r
+# function required for tidytext
+tidy_dfm <- function(x) {
+    temp <- tidytext::unnest_tokens(x, token, txt, to_lower = FALSE)
+    temp <- dplyr::count(temp, token, document)
+    tidytext::cast_dfm(temp, document, token, n)
+}
+
+# measure the execution time for creating a dfm (repeating the process 20 times)
+times_dfm <- microbenchmark(
+    quanteda = quanteda::dfm(corp_qu, what = "fastestword"),
+    tm = tm::TermDocumentMatrix(corp_tm, control = list(tokenize = Boost_tokenizer)),
+    tidytext = tidy_dfm(corp_ti),
+    times = 20
+)
+```
+
+
+```r
+plot_benchmark(times_dfm, "Constructing a document-feature matrix")
+```
+
+![plot of chunk plot_dfm](figures_performance/plot_dfm-1.png)
+
+In terms of transforming tokenized text to a document-feature matrix, the execution times for **tm** and **quanteda** are similar. **tidytext** is slower because it involves an intermediate step (counting the occurences of each term) before we transform it to **quanteda**'s `dfm` object.
+
+Overall, we see that the biggest advantage of **quanteda** compared to the **tm** package lies in the much fast tokenization of corpora. **tidytext** and **quanteda** perform similarly in terms of tokenization. Note that you can speed up these commands in **quanteda** easily by increasing the number of threads to use in parallelized functions. The default set by CRAN is 2, but you can easily change this by choosing the maximum of the number of threads - 1 in `quanteda.options`.
+
+
+```r
+# get number of threads
+number_threads <- RcppParallel::defaultNumThreads()
+
+quanteda_options("threads" = number_threads - 1)
+```
+
+If you would like to see additional performance tests, please contact the [maintainer](K.R.Benoit@lse.ac.uk). 
+
+
+```r
+# save execution times as rds file
+save(times_token, times_remove, times_dfm, file =  '../../data/data_news/r-packages_benchmark.Rdata')
+```
