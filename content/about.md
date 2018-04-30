@@ -41,7 +41,7 @@ We develop **quanteda** to achieve following core objectives in quantitative tex
 * [Ben Lauderdale](https://github.com/lauderdale)
 * [Will Lowe](https://github.com/conjugateprior)
 
-See a [Github Insights](https://github.com/quanteda/quanteda/graphs/contributors) for other contributors. If you wish to contribute to our projects, please visit our [Github page](https://github.com/quanteda/quanteda/wiki).
+See [Github Insights](https://github.com/quanteda/quanteda/graphs/contributors) for other contributors. If you wish to contribute to our projects, please visit our [Github page](https://github.com/quanteda/quanteda/wiki).
 
 #### Supporters
 
