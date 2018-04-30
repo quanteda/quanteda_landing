@@ -5,11 +5,11 @@ id = "basic"
 
 ## Organization
 
-### Quantida Initiative
+### Quanteda Initiative
 
-**quanteda** and its accompaniying packages are developed by contributors through the Quanteda Initiative, a UK-based community interest company (11135166) founded by Kenneth Benoit, to promote quantitative text analysis in social sociences and humanities. Please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk) for any queries on the organization. 
+**quanteda** and its accompanying packages are developed by contributors through the Quanteda Initiative, a UK-based community interest company (11135166) founded by Kenneth Benoit, to promote quantitative text analysis in social sociences and humanities. Please contact [Kenneth Benoit](mailto:kbenoit@lse.ac.uk) for any queries on the organization. 
 
-![Quantida Initiative](../img/qi.svg)
+![Quanteda Initiative](../img/qi.svg)
 
 ## Projects
 
