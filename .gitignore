@@ -6,4 +6,5 @@
 public/
 content/*/*.html
 content/*_cache
+blogdown/*_cache
 

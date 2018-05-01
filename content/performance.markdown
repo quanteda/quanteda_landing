@@ -78,9 +78,9 @@ times_token <- microbenchmark(
 
 ```
 ##       expr   min    lq  mean median    uq   max neval
-## 1       tm 14.32 14.66 14.92  14.82 15.25 15.61    20
-## 2 quanteda  1.12  1.40  1.61   1.59  1.75  2.22    20
-## 3 tidytext  1.19  1.24  1.39   1.33  1.50  1.95    20
+## 1       tm 13.60 13.93 14.09  14.00 14.26 14.77    20
+## 2 quanteda  1.02  1.25  1.30   1.34  1.37  1.47    20
+## 3 tidytext  1.03  1.11  1.19   1.19  1.29  1.34    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-7-1.png" width="576" />
@@ -116,10 +116,10 @@ Again, **quanteda** and **tidytext** outperform **tm** in feature selection.
 
 
 ```
-##       expr   min    lq  mean median    uq  max neval
-## 1       tm 0.796 0.801 0.845  0.850 0.869 0.92    20
-## 2 tidytext 0.780 0.810 0.923  0.873 0.959 1.46    20
-## 3 quanteda 0.547 0.579 0.688  0.649 0.763 0.95    20
+##       expr   min    lq  mean median    uq   max neval
+## 1       tm 0.792 0.797 0.804  0.801 0.806 0.841    20
+## 2 tidytext 0.846 0.864 0.889  0.888 0.910 0.950    20
+## 3 quanteda 0.557 0.579 0.613  0.610 0.633 0.700    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-10-1.png" width="576" />
@@ -151,10 +151,10 @@ In terms of transforming tokenized text to a document-feature matrix, the execut
 
 
 ```
-##       expr  min   lq  mean median    uq   max neval
-## 1       tm 3.73 3.93  4.04   4.04  4.14  4.34    20
-## 2 tidytext 9.88 9.99 10.43  10.25 10.62 12.56    20
-## 3 quanteda 2.35 2.72  2.91   2.90  3.11  3.53    20
+##       expr  min   lq mean median   uq  max neval
+## 1       tm 2.89 2.94 3.10   3.02 3.14 4.07    20
+## 2 tidytext 7.58 7.80 8.09   8.09 8.26 8.78    20
+## 3 quanteda 1.82 2.00 2.34   2.40 2.48 3.16    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-12-1.png" width="576" />
