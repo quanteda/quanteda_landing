@@ -5,4 +5,5 @@
 *.Rproj
 public/
 content/*/*.html
+content/*/cache
 
