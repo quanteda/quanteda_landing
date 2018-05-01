@@ -43,8 +43,6 @@ corp_tm <- tm::Corpus(VectorSource(txt))
 corp_ti <- data_frame(txt = txt, document = seq_along(txt))
 ```
 
-
-
 ## 2. Tokenize texts
 
 Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus.
@@ -189,5 +187,3 @@ quanteda_options("threads" = number_threads - 1)
 ```
 
 If you would like to see additional performance tests, please contact the [maintainer](K.R.Benoit@lse.ac.uk). 
-
-
