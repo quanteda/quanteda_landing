@@ -1,27 +1,25 @@
 ---
 title: "Comparing the performance of quanteda with other R packages"
-author: "Kohei Watanabe, Stefan Müller, and Kenneth Benoit"
-date: "2018-04-10"
+author: "Kohei Watanabe and Stefan Müller"
+date: "2018-05-02"
 ---
 
 
 
+One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns the performance and execution time compared with other packages for quantitative text analysis. In this short blog post, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages. We focus on three major operations of text analysis that can be accomplished in all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
 
-One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns the performance and execution time compared with other packages for quantitative text analysis. In this short blog post, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages. We focus on three major steps of text analysis that can be accomplished in all three packages: tokenizing text, removing certain features from a corpus/tokens object, and creating a document-feature matrix (also called document-term matrix). 
+We measure the execution time with the **microbenchmark**. We repeat each operation 20 times to obtain distribution of execution time. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
 
-We measure the execution time with the **microbenchmark** package repeated each step 20 times for each package and creating summary statistics.
+## 1. Preparation
 
-**quanteda** supports multi-threading but it defaults to only two threads due to CRAN's regulation, so you have to set the value through `quanteda.options()`.
+**quanteda** supports multi-threading but the number of threads defaults to two due to CRAN's regulation, so users have to set the value through `quanteda.options()` to maximize its performance.
 
 
 ```r
 quanteda_options("threads" = 8)
 ```
 
-
-## 1. Create a corpus
-
-First, we create a corpus from 6000 articles published in the Guardian. The corpus consists of over 5.3 million tokens and is part of **quanteda.corpora**, a package with several text corpora.
+We use a corpus from 6000 articles published in *the Guardian* for benchmarking. The corpus consists of over 5.3 million tokens and is part of **quanteda.corpora**.
  
 
 ```r
@@ -55,13 +53,13 @@ corp_tm <- tm::Corpus(VectorSource(txt))
 # create a quanteda corpus
 corp_qu <- quanteda::corpus(txt)
 
-# create a data frame with one observation per text for tidytext
+# create a data frame with document identifier
 corp_ti <- data_frame(txt = txt, document = seq_along(txt))
 ```
 
 ## 2. Tokenization
 
-Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. We repeat this process 20 times to obtain distribution of exectutio time.
+Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. 
 
 
 ```r
@@ -73,7 +71,7 @@ times_token <- microbenchmark(
 )
 ```
 
-**quanteda**'s and **tidytext**'s execution times are identical as both packages rely on the **stringi** package for tokenization. The disadvantage in computational performance of the **tm** becomes evident. Tokenization in **tm** takes much longer than in the other two packages.
+**quanteda**'s and **tidytext**'s execution times are very close as both packages rely on the **stringi** package for tokenization, but the operation takes much longer in **tm** than in the other two packages.
 
 
 ```
@@ -87,7 +85,7 @@ times_token <- microbenchmark(
 
 ## 3. Feature selection
 
-In a third step, we remove a selection of terms from the tokenized object. This is a common task as many projects involve removing so called stopwords or punctuation. We use the list of English stopwords from the **stopwords** package and measure the time it takes to remove these tokens in each package.
+Here, we remove grammatical words from the texts to measure time in feature selection. We use the list of 175 English grammatical words from the **stopwords** package.
 
 
 ```r
@@ -147,19 +145,19 @@ times_dfm <- microbenchmark(
 )
 ```
 
-In terms of transforming tokenized text to a document-feature matrix, the execution times for **tm** and **quanteda** are similar. **tidytext** is slower because it involves an intermediate step (counting the occurences of each term) before we transform it to **quanteda**'s `dfm` object.
+In terms of transforming tokenized text to a document-feature matrix, the execution times for **tm** and **quanteda** are similar. **tidytext** is slower because it involves an intermediate step (counting the occurrences of each term) before we transform it to **quanteda**'s `dfm` object.
 
 
 ```
-##       expr  min   lq mean median   uq  max neval
-## 1       tm 2.89 2.94 3.10   3.02 3.14 4.07    20
-## 2 tidytext 7.58 7.80 8.09   8.09 8.26 8.78    20
-## 3 quanteda 1.82 2.00 2.34   2.40 2.48 3.16    20
+##       expr  min   lq  mean median    uq   max neval
+## 1       tm 3.10 3.44  3.94   3.91  4.35  5.22    20
+## 2 tidytext 8.44 9.73 10.19  10.24 10.61 11.96    20
+## 3 quanteda 2.11 2.54  2.81   2.77  2.98  3.90    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-12-1.png" width="576" />
 
 ## 5. Colclusion
 
-Overall, we see that the biggest advantage of **quanteda** compared to the **tm** package lies in the much fast tokenization of texts. **tidytext** and **quanteda** perform similarly in  tokenization due to the common underlying package. However, **quanteda** is much faster than **tidytext** in both feature selection and document-feature matrix construction.
+Overall, we see that the biggest advantage of **quanteda** and **tidytext** compared to the **tm** package lies in the much fast tokenization of texts. They perform similarly in  tokenization due to the common underlying package. However, **quanteda** is much faster than **tidytext** in both feature selection and document-feature matrix construction.
 
