@@ -29,7 +29,7 @@ We measure the execution time with the **microbenchmark**. We repeat each operat
 quanteda_options("threads" = 8)
 ```
 
-We use a corpus from 6000 articles published in *the Guardian* for benchmarking. The corpus consists of over 5.3 million tokens and is part of **quanteda.corpora**.
+We use a corpus from 6000 articles published in *the Guardian* for benchmarking. The corpus consists of over 5.3 million tokens and is part of [**quanteda.corpora**](https://github.com/quanteda/quanteda.corpora).
  
 ```{r, eval=FALSE}
 txt <- texts(quanteda.corpora::download('data_corpus_guardian'))
@@ -69,7 +69,7 @@ times_token <- microbenchmark(
 )
 ```
 
-**quanteda**'s and **tidytext**'s execution times are very close as both packages rely on the **stringi** package for tokenization, but the operation takes much longer in **tm** than in the other two packages.
+**quanteda**'s and **tidytext**'s execution times are very similar as both packages rely on the **stringi** package for tokenization. The operation takes much longer in **tm** than in the other two packages.
 
 ```{r echo=FALSE}
 print(summary(times_token), digits = 3)
@@ -78,7 +78,7 @@ autoplot(times_token, log = FALSE)
 
 ## 3. Feature selection
 
-Here, we remove grammatical words from the texts to measure time in feature selection. We use the list of `r length(stopwords::stopwords('en'))` English grammatical words from the **stopwords** package.
+Here, we remove grammatical words from the texts to measure time in feature selection. We use the list of `r length(stopwords::stopwords('en'))` English grammatical words from the [**stopwords**](https://github.com/quanteda/stopwords) package.
 
 ```{r}
 # determine the list of stopwords
@@ -101,7 +101,7 @@ times_remove <- microbenchmark(
 )
 ```
 
-Again, **quanteda** and **tidytext** outperform **tm** in feature selection.
+**quanteda** and **tidytext** also outperform **tm** in feature selection.
 
 ```{r echo=FALSE}
 print(summary(times_remove), digits = 3)
@@ -137,7 +137,7 @@ print(summary(times_dfm), digits = 3)
 autoplot(times_dfm, log = FALSE)
 ```
 
-## 5. Colclusion
+## 5. Conclusion
 
-Overall, we see that the biggest advantage of **quanteda** and **tidytext** compared to the **tm** package lies in the much fast tokenization of texts. They perform similarly in  tokenization due to the common underlying package. However, **quanteda** is much faster than **tidytext** in both feature selection and document-feature matrix construction.
+Overall, we see that the biggest advantage of **quanteda** and **tidytext** compared to the **tm** package lies in the much fast tokenization of texts. **quanteda** and **tidytext** perform similarly in  tokenization due to the common underlying package. However, **quanteda** is much faster than **tidytext** in both feature selection and document-feature matrix construction.
 
