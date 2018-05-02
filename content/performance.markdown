@@ -6,7 +6,7 @@ date: "2018-05-02"
 
 
 
-One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns its performance compared with other packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
+One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns its performance compared to other R packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages in terms of execution time. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
 
 We measure the execution time with the **microbenchmark**. We repeat each operation 20 times to obtain distribution of execution time. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
 
@@ -150,9 +150,9 @@ In terms of transforming tokenized text to a document-feature matrix, the execut
 
 ```
 ##       expr  min   lq mean median   uq   max neval
-## 1       tm 3.04 3.35 3.60   3.57 3.87  4.14    20
-## 2 tidytext 8.59 9.06 9.59   9.56 9.98 10.90    20
-## 3 quanteda 1.94 2.41 2.57   2.59 2.78  2.95    20
+## 1       tm 3.04 3.11 3.27   3.23 3.42  3.55    20
+## 2 tidytext 8.69 9.00 9.19   9.10 9.30 10.38    20
+## 3 quanteda 1.99 2.28 2.43   2.42 2.64  2.75    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-12-1.png" width="576" />

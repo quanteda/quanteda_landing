@@ -17,7 +17,7 @@ require(tidytext)
 require(stopwords)
 ```
 
-One of the most frequent questions about the **quanteda** (version `r packageVersion("quanteda")`) package concerns its performance compared with other packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version `r packageVersion("tm")`) and [**tidytext**](tidytext package) (version `r packageVersion("tidytext")`) packages. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
+One of the most frequent questions about the **quanteda** (version `r packageVersion("quanteda")`) package concerns its performance compared to other R packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version `r packageVersion("tm")`) and [**tidytext**](tidytext package) (version `r packageVersion("tidytext")`) packages in terms of execution time. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
 
 We measure the execution time with the **microbenchmark**. We repeat each operation 20 times to obtain distribution of execution time. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
 
