@@ -17,7 +17,7 @@ require(tidytext)
 require(stopwords)
 ```
 
-One of the most frequent questions about the **quanteda** (version `r packageVersion("quanteda")`) package concerns the performance and execution time compared with other packages for quantitative text analysis. In this short blog post, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version `r packageVersion("tm")`) and [**tidytext**](tidytext package) (version `r packageVersion("tidytext")`) packages. We focus on three major operations of text analysis that can be accomplished in all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
+One of the most frequent questions about the **quanteda** (version `r packageVersion("quanteda")`) package concerns its performance compared with other packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version `r packageVersion("tm")`) and [**tidytext**](tidytext package) (version `r packageVersion("tidytext")`) packages. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
 
 We measure the execution time with the **microbenchmark**. We repeat each operation 20 times to obtain distribution of execution time. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
 
@@ -29,7 +29,7 @@ We measure the execution time with the **microbenchmark**. We repeat each operat
 quanteda_options("threads" = 8)
 ```
 
-We use a corpus from 6000 articles published in *the Guardian* for benchmarking. The corpus consists of over 5.3 million tokens and is part of [**quanteda.corpora**](https://github.com/quanteda/quanteda.corpora).
+We use a corpus from 6000 articles published in the *Guardian* for benchmarking. The corpus consists of over 5.3 million tokens and is part of [**quanteda.corpora**](https://github.com/quanteda/quanteda.corpora).
  
 ```{r, eval=FALSE}
 txt <- texts(quanteda.corpora::download('data_corpus_guardian'))
@@ -101,7 +101,7 @@ times_remove <- microbenchmark(
 )
 ```
 
-**quanteda** and **tidytext** also outperform **tm** in feature selection.
+**quanteda** outperform **tidytext** and **tm** in feature selection.
 
 ```{r echo=FALSE}
 print(summary(times_remove), digits = 3)
