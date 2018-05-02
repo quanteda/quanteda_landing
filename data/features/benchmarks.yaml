@@ -1,0 +1,6 @@
+weight: 5
+name: "Performance"
+icon: "fa fa-tachometer-alt"
+link: /performance/
+description: >
+    Compare **quanteda**'s execution times with other R packages
