@@ -59,7 +59,7 @@ corp_ti <- data_frame(txt = txt, document = seq_along(txt))
 
 ## 2. Tokenization
 
-Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. 
+Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. **quanted** and **tm** have multiple tokenizers, but these are the fastest options.
 
 
 ```r
@@ -149,10 +149,10 @@ In terms of transforming tokenized text to a document-feature matrix, the execut
 
 
 ```
-##       expr  min   lq mean median   uq   max neval
-## 1       tm 3.04 3.11 3.27   3.23 3.42  3.55    20
-## 2 tidytext 8.69 9.00 9.19   9.10 9.30 10.38    20
-## 3 quanteda 1.99 2.28 2.43   2.42 2.64  2.75    20
+##       expr   min    lq  mean median    uq   max neval
+## 1       tm  9.68 10.07 10.40   10.3 10.63 11.45    20
+## 2 tidytext 16.20 16.57 17.30   17.1 17.55 20.39    20
+## 3 quanteda  4.30  4.64  4.93    4.8  5.12  6.29    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-12-1.png" width="576" />

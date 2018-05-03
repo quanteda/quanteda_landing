@@ -58,7 +58,7 @@ corp_ti <- data_frame(txt = txt, document = seq_along(txt))
 
 ## 2. Tokenization
 
-Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. 
+Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. **quanted** and **tm** have multiple tokenizers, but these are the fastest options.
 
 ```{r, cache=TRUE}
 times_token <- microbenchmark(
