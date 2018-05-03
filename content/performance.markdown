@@ -6,13 +6,13 @@ date: "2018-05-02"
 
 
 
-One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns its performance compared to other R packages for quantitative text analysis. In this page, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages in terms of execution time. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
+One of the most frequent questions about the **quanteda** (version 1.2.1) package concerns its performance compared to other R packages for quantitative text analysis. In this article, we compare **quanteda** with the popular [**tm**](https://cran.r-project.org/package=tm) (version 0.7.3) and [**tidytext**](tidytext package) (version 0.1.8) packages in terms of execution time. We focus on three common operations of text analysis that we can accomplish by all three packages: tokenization, feature selection, and document-feature matrix (or document-term matrix) construction. 
 
-We measure the execution time with the **microbenchmark**. We repeat each operation 20 times to obtain distribution of execution time. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
+We measure the execution time with the **microbenchmark** package. We repeat each operation 20 times to obtain a distribution of execution times. The benchmarking code is [available in the website repository](https://github.com/quanteda/quanteda_landing/tree/master/content/performance.Rmarkdown).
 
 ## 1. Preparation
 
-**quanteda** supports multi-threading but the number of threads defaults to two due to CRAN's regulation, so users have to set the value through `quanteda.options()` to maximize its performance.
+**quanteda** supports multi-threading but the number of threads defaults to two due to CRAN's regulation. Users have to set the value through `quanteda.options()` to maximize its performance.
 
 
 ```r
@@ -59,7 +59,7 @@ corp_ti <- data_frame(txt = txt, document = seq_along(txt))
 
 ## 2. Tokenization
 
-Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. 
+Having created the corpus objects for each package, we measure the time it takes to tokenize the corpus. **quanteda** and **tm** have multiple tokenizers, but these are the fastest options.
 
 
 ```r
@@ -124,7 +124,7 @@ times_remove <- microbenchmark(
 
 ## 4. Document-feature matrix construction
 
-Finally, we construct a document-feature matrix from a corpus to compare packages' overall performance.
+Finally, we construct a document-feature matrix from a corpus.
 
 
 ```r
@@ -149,10 +149,10 @@ In terms of transforming tokenized text to a document-feature matrix, the execut
 
 
 ```
-##       expr  min   lq mean median   uq   max neval
-## 1       tm 3.04 3.11 3.27   3.23 3.42  3.55    20
-## 2 tidytext 8.69 9.00 9.19   9.10 9.30 10.38    20
-## 3 quanteda 1.99 2.28 2.43   2.42 2.64  2.75    20
+##       expr   min    lq  mean median    uq   max neval
+## 1       tm  9.68 10.07 10.40   10.3 10.63 11.45    20
+## 2 tidytext 16.20 16.57 17.30   17.1 17.55 20.39    20
+## 3 quanteda  4.30  4.64  4.93    4.8  5.12  6.29    20
 ```
 
 <img src="/performance_files/figure-html/unnamed-chunk-12-1.png" width="576" />
